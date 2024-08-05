@@ -19,4 +19,4 @@ instant_bookable = 1 if instant_bookable == "True" else 0
 user_input = [[amenities, accommodates, instant_bookable]]
 
 if st.button('Predict?'):
-    st.write("The model predicts that the average tip for this listing is:", model.predict(user_input).round(2))
+    st.write("The model predicts that the average price for this listing is:", model.predict(user_input).round(2))
